@@ -4,6 +4,6 @@ html, body {
   background-color: #161616;
 }
 
-#form {
-  background-color: blue;
+input, textarea {
+  background-color: #5CDB95;
 }
