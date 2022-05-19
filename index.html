@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Guessing Game</title>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <main>
+      <form action="#" name="guessingGame" id="guessingForm" method="get">
+        <h1>The Guessing Game</h1>
+        <p>
+          Pick a number between 1 and 100!<br/>
+          I will tell you if the correct number is higher or lower.
+        </p>
+        <fieldset id="guessing">
+        <label>
+          <b>Your guess</b>
+          <input type="number" name="guess" id="guess" placeholder="1-100" tabindex="1" />
+        </label>
+        <label>
+          <b>Tries so far</b>
+          <input type="number" name="tries" id="tries" value="0" disabled="disabled" />
+        </label>
+        <p id="hint">
+          Give it a guess!
+        </p>
+      </fieldset>
+      <fieldset id="playing">
+        <h3>You got it!</h3>
+        <p>It was <input type="number" name="answer" id="answer" disabled="disabled" /></p>
+        <p>You got it right in <input type="number" name="score" id="score" disabled="disabled" /> tries.</p>
+        Do you want to play again <input type="button" value="Yes" id="yes" /> <input type="button" value="No" id="no" />
+      </fieldset>
+      <fieldset id="final">
+        <h3>Thanks for playing</h3>
+        <p>Here's how you did...</p>
+        <table>
+          <tr><td>Total games</td><td><input type="number" value="0" id="games"  disabled="disabled" /></td></tr>
+          <tr><td>Total guesses</td><td><input type="number" value="0" id="guesses"  disabled="disabled" /></td></tr>
+          <tr><td>Avg guesses</td><td><input type="number" value="0" id="avg"  disabled="disabled" /></td></tr>
+          <tr><td>Best game</td><td><input type="number" value="0" id="best"  disabled="disabled" /></td></tr>
+        </table>
+      </fieldset>
+      </form>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
