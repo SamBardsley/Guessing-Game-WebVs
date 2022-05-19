@@ -7,12 +7,13 @@
   <body>  
     <main>
       <form action="#" name="guessingGame" id="guessingForm" method="get">
-        <h1>The Guessing Game</h1>
+        <div class="mainTitle"><h1>The Guessing Game</h1></div>
         <p>
           Pick a number between 1 and 100!<br/>
           I will tell you if the correct number is higher or lower.
         </p>
         <fieldset id="guessing">
+        <legend>Guess a number:</legend>
         <label>
           <b>Your guess</b>
           <input type="number" name="guess" id="guess" placeholder="1-100" tabindex="1"/>
@@ -29,7 +30,7 @@
         <h3>You got it!</h3>
         <p>It was <input type="number" name="answer" id="answer" disabled="disabled"/></p>
         <p>You got it right in <input type="number" name="score" id="score" disabled="disabled"/> tries.</p>
-        <p>Do you want to play again<input type="button" value="Yes" id="yes" /> <input type="button" value="No" id="no"/></p>
+        <p>Do you want to play again<input type="button" value="Yes" id="yes"/> <input type="button" value="No" id="no"/></p>
       </fieldset>
       <fieldset id="final">
         <h3>Thanks for playing</h3>

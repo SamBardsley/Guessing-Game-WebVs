@@ -4,14 +4,34 @@ html, body {
   background-color: #161616;
 }
 
-h1 {
-  color: #da493a;
-}
-
-p, b, h3, tr {
+h1, p, b, h3, tr {
   color: #FFFFFF;
 }
 
 input, textarea {
   background-color: #5CDB95;
+}
+
+.mainTitle {
+  width: 99%;
+  background-color: #da493a;
+  text-align: center;
+  padding: .5px 0;
+  font-size: 20px;
+}
+
+fieldset {
+  display: block;
+  width: 97%;
+  padding-top: 0.35em;
+  padding-bottom: 0.625em;
+  padding-left: 0.75em;
+  padding-right: 0.75em;
+  border: 2px groove (internal value);
+}
+
+legend {
+  background-color: #da493a;
+  color: white;
+  padding: 5px 10px;
 }

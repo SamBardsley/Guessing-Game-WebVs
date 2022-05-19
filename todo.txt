@@ -5,3 +5,5 @@ TODO:
 4. extend guess box to same length as end playing box
 5. snazz it up
 6. maybe add light mode/dark mode switch?
+7. add a readme explaining what we have changed
+8. make "here's how you did" appear later (if user clicks no, show them the stats)
