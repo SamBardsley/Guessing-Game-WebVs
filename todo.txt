@@ -1,0 +1,7 @@
+TODO:
+1. fix end game scenarios
+2. decide and commit to color scheme 
+3. add top nav bar
+4. extend guess box to same length as end playing box
+5. snazz it up
+6. maybe add light mode/dark mode switch?
