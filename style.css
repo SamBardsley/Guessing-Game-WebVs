@@ -4,6 +4,14 @@ html, body {
   background-color: #161616;
 }
 
+h1 {
+  color: #da493a;
+}
+
+p, b, h3, tr {
+  color: #FFFFFF;
+}
+
 input, textarea {
   background-color: #5CDB95;
 }
