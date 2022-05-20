@@ -12,7 +12,9 @@ function guessingGame(){
   const yesDom      = document.getElementById("yes");
   const guessesDom  = document.getElementById("guesses");
   const bestDom     = document.getElementById("best");
+  const gamesDom    = document.getElementById("games");  
 
+  let total  = 0;
   let answer = -1; 
   let tries  = 0;
   play();
@@ -29,6 +31,7 @@ function guessingGame(){
 
     answer = Math.floor(Math.random() * 100) +1;
     ansDom.value = answer;
+    console.log(ansDom.value);
     tries = 1;
   }
   function setTries(soFar){
@@ -52,10 +55,12 @@ function guessingGame(){
   function showGameResults(tries){
     guessingDom.style.display = "none";
     playingDom.style.display  = "unset";
-    score.value = tries;
+    total++;
+    gamesDom.value   = total;
+    score.value      = tries;
     guessesDom.value = tries + parseInt(guessesDom.value);
-    bestDom.value = getBest(tries);
-    gamesDom.value = parseInt(gamesDom.value) + 1;
+    bestDom.value    = getBest(tries);
+    //  gamesDom.value   = parseInt(gamesDom.value);
     yesDom.focus();
   }
   
