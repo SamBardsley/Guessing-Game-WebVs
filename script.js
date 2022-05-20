@@ -19,8 +19,8 @@ function guessingGame(){
   let tries  = 0;
   play();
 
-  guessDom.addEventListener("change",makeGuess);
-  yesDom.addEventListener("click",play);
+  guessDom.addEventListener("change", makeGuess);
+  yesDom.addEventListener("click", play);
   
   function play(){
     guessDom.setAttribute("placeholder", "1-100");
