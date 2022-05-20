@@ -4,8 +4,16 @@ html, body {
   background-color: #161616;
 }
 
-h1, p, b, h3, tr {
+p, b, h3, tr {
   color: #FFFFFF;
+  font-family: 'Lora', serif;
+}
+
+h1 {
+  color: #FFFFFF;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
 }
 
 input, textarea {
