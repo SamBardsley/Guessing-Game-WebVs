@@ -1,16 +1,25 @@
-html, body {
-  height: 100%;
-  width: 100%;
+html,body{
+  height:100%; 
+  width:100%;
+  margin:0%;
+}
+
+
+html, body.dark {
   background-color: #161616;
+  color: #FFFFFF;
+}
+
+html, body.light {
+  background-color: #FFFFFF;
+  color: #161616;
 }
 
 p, b, h3, tr {
-  color: #FFFFFF;
   font-family: 'Lora', serif;
 }
 
 h1 {
-  color: #FFFFFF;
   font-family: 'Montserrat', sans-serif;
   font-weight: 300;
   text-transform: uppercase;
@@ -21,7 +30,7 @@ input, textarea {
 }
 
 .mainTitle {
-  width: 99%;
+  width: 100%;
   background-color: #da493a;
   text-align: center;
   padding: .5px 0;
@@ -33,13 +42,19 @@ fieldset {
   width: 97%;
   padding-top: 0.35em;
   padding-bottom: 0.625em;
-  padding-left: 0.75em;
-  padding-right: 0.75em;
+  padding-left: 1em;
+  padding-right: 1em;
   border: 2px groove (internal value);
 }
 
 legend {
   background-color: #da493a;
-  color: white;
   padding: 5px 10px;
+}
+
+#toggle_b {
+  background-color: #da493a;
+  position: fixed;
+  bottom: 0;
+  right: 0;
 }

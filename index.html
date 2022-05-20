@@ -5,8 +5,12 @@
     <link href="style.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:300" rel="stylesheet">
   </head>
-  <body>  
+  <body class="dark">  
+    <script>
+      document.body.className = "dark";
+    </script>
     <main>
+      
       <form action="#" name="guessingGame" id="guessingForm" method="get">
         <div class="mainTitle"><h1>The Guessing Game</h1></div>
         <p>
@@ -43,6 +47,9 @@
           <tr><td>Best game</td><td><input type="number" value="0" id="best"  disabled="disabled" /></td></tr>
         </table>
       </fieldset>
+      <div class="themeToggle">
+        <input type="button" value="Toggle Theme" id="toggle_b"/>
+      </div>
       </form>
     </main>
     <script src="script.js"></script>

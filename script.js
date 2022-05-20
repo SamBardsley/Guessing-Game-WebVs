@@ -1,7 +1,7 @@
 
 
 function guessingGame(){
-  
+  const btn         = document.getElementById('toggle_b');
   const guessingDom = document.getElementById("guessing");
   const playingDom  = document.getElementById("playing");
   const guessDom    = document.getElementById("guess");
@@ -21,6 +21,15 @@ function guessingGame(){
 
   guessDom.addEventListener("change", makeGuess);
   yesDom.addEventListener("click", play);
+
+  btn.addEventListener('click', function handleClick() {
+    btn.textContent = 'toggle';
+    if (document.body.className == "dark") {
+      document.body.className = "light";
+    } else {
+      document.body.className = "dark";
+    }
+  });
   
   function play(){
     guessDom.setAttribute("placeholder", "1-100");
