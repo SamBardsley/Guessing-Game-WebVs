@@ -41,6 +41,10 @@ h1 {
   font-size: 20px;
 }
 
+.openingP {
+  text-align: center;
+}
+
 fieldset {
   display: block;
   width: 97%;
@@ -111,4 +115,22 @@ input[type=number]:hover {
 input[type=number]:focus {
   background-color: #edddd3;
   border-color: #000;
+}
+
+input[type=button] {
+  background-color: #da493a;
+  margin:2px 2px;
+  margin-left: 5px;
+  border: 1px solid #eee;
+  border-radius:5px;
+  box-shadow:0 0 15px 4px rgba(10,0,0, 0.06);
+  color: white;
+}
+
+input[type=button]:hover {
+  border: 1px solid #aaa;
+}
+
+input[type=button]:focus {
+  background-color: #ba3e31;
 }
