@@ -23,9 +23,9 @@ p, b, h3, tr {
 h1 {
   @font-face {
     font-family: ObadiahProRegular;
-    src: url(ObadiahProRegular.ttf);
+    src: url("ObadiahProRegular.otf");
   }
-  
+
   /*
   font-family: 'Montserrat', sans-serif;
   font-weight: 300;
