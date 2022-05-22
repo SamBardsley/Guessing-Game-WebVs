@@ -61,7 +61,8 @@ legend {
 }
 
 #toggle_b {
-  background-color: #da493a;
+  background-image: "https://www.pngfind.com/pngs/m/75-759829_png-file-svg-night-mode-icon-download-transparent.png";
+  /* background-color: #da493a; */
   position: fixed;
   bottom: 0;
   right: 0;
