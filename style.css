@@ -17,12 +17,20 @@ html, body.light {
 
 p, b, h3, tr {
   font-family: 'Lora', serif;
+  
 }
 
 h1 {
+  @font-face {
+    font-family: ObadiahProRegular;
+    src: url(ObadiahProRegular.ttf);
+  }
+  
+  /*
   font-family: 'Montserrat', sans-serif;
   font-weight: 300;
   text-transform: uppercase;
+  */
 }
 
 input, textarea {
