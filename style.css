@@ -46,8 +46,8 @@ fieldset {
   width: 97%;
   padding-top: 0.35em;
   padding-bottom: 0.625em;
-  padding-left: 1em;
-  padding-right: 1em;
+  padding-left: 1%;
+  padding-right: 1%;
   border: 2px groove (internal value);
 }
 
