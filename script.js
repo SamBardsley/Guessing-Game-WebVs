@@ -13,6 +13,7 @@ function guessingGame(){
   const guessesDom  = document.getElementById("guesses");
   const bestDom     = document.getElementById("best");
   const gamesDom    = document.getElementById("games");  
+  const avgDom      = document.getElementById("avg");
 
   let total  = 0;
   let answer = -1; 
@@ -43,6 +44,7 @@ function guessingGame(){
     ansDom.value = answer;
     console.log(ansDom.value);
     tries = 1;
+    //alert(answer);
   }
   function setTries(soFar){
     return soFar;
@@ -68,6 +70,7 @@ function guessingGame(){
     score.value      = tries;
     guessesDom.value = tries + parseInt(guessesDom.value);
     bestDom.value    = getBest(tries);
+    avgDom.value = parseInt(guessesDom.value) / parseInt(gamesDom.value);
     //  gamesDom.value   = parseInt(gamesDom.value);
     yesDom.focus();
   }
