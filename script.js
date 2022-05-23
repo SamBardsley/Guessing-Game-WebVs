@@ -49,11 +49,13 @@ function guessingGame(){
   }
   function makeGuess(e){
     this.setAttribute("placeholder",this.value);
+    while (this.value != answer){
+      if      (this.value < answer) hintDom.innerHTML = "HIGHER! The answer is higher!";
+      else if (this.value > answer) hintDom.innerHTML = "LOWER! The answer is lower!";
+      // else    showGameResults(tries);
+    }
+    showGameResults(tries);
     
-    if      (this.value < answer) hintDom.innerHTML = "HIGHER! The answer is higher!";
-    else if (this.value > answer) hintDom.innerHTML = "LOWER! The answer is lower!";
-    else    showGameResults(tries);
-  
     triesDom.value = tries++;
     this.value = "";
 
