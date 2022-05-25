@@ -1,7 +1,7 @@
 
 
 function guessingGame(){
-  const btn         = document.getElementById('toggle_b');
+  const btn         = document.getElementById('toggle_btn');
   const guessingDom = document.getElementById("guessing");
   const playingDom  = document.getElementById("playing");
   const guessDom    = document.getElementById("guess");
@@ -13,6 +13,7 @@ function guessingGame(){
   const guessesDom  = document.getElementById("guesses");
   const bestDom     = document.getElementById("best");
   const gamesDom    = document.getElementById("games");  
+  const avgDom      = document.getElementById("avg");
 
   let total  = 0;
   let answer = -1; 
@@ -23,11 +24,12 @@ function guessingGame(){
   yesDom.addEventListener("click", play);
 
   btn.addEventListener('click', function handleClick() {
-    btn.textContent = 'toggle';
     if (document.body.className == "dark") {
       document.body.className = "light";
+      btn.querySelector('ion-icon').setAttribute('name', 'moon-outline');
     } else {
       document.body.className = "dark";
+      btn.querySelector('ion-icon').setAttribute('name', 'sunny-outline');
     }
   });
   
@@ -42,17 +44,16 @@ function guessingGame(){
     ansDom.value = answer;
     console.log(ansDom.value);
     tries = 1;
+    //alert(answer);
   }
   function setTries(soFar){
     return soFar;
   }
   function makeGuess(e){
     this.setAttribute("placeholder",this.value);
-    
     if      (this.value < answer) hintDom.innerHTML = "HIGHER! The answer is higher!";
     else if (this.value > answer) hintDom.innerHTML = "LOWER! The answer is lower!";
     else    showGameResults(tries);
-  
     triesDom.value = tries++;
     this.value = "";
 
@@ -69,6 +70,7 @@ function guessingGame(){
     score.value      = tries;
     guessesDom.value = tries + parseInt(guessesDom.value);
     bestDom.value    = getBest(tries);
+    avgDom.value = parseInt(guessesDom.value) / parseInt(gamesDom.value);
     //  gamesDom.value   = parseInt(gamesDom.value);
     yesDom.focus();
   }

@@ -33,10 +33,6 @@ h1 {
   */
 }
 
-input, textarea {
-  background-color: #5CDB95;
-}
-
 .mainTitle {
   width: 100%;
   background-color: #da493a;
@@ -45,13 +41,17 @@ input, textarea {
   font-size: 20px;
 }
 
+.openingP {
+  text-align: center;
+}
+
 fieldset {
   display: block;
   width: 97%;
   padding-top: 0.35em;
   padding-bottom: 0.625em;
-  padding-left: 1em;
-  padding-right: 1em;
+  padding-left: 1%;
+  padding-right: 1%;
   border: 2px groove (internal value);
 }
 
@@ -60,10 +60,77 @@ legend {
   padding: 5px 10px;
 }
 
-#toggle_b {
-  background-image: "https://www.pngfind.com/pngs/m/75-759829_png-file-svg-night-mode-icon-download-transparent.png";
-  /* background-color: #da493a; */
+.button {
+  display: inline-flex;
+  height: 40px;
+  padding: 0;
+  background: #da493a;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  overflow: hidden;
+  font-family:'Lora', serif;
+  font-size: 16px;
+  cursor: pointer;
   position: fixed;
-  bottom: 0;
-  right: 0;
+  bottom: 5px;
+  right: 5px;
+}
+
+.button:hover {
+  background-color: #ba3e31;
+}
+
+.button:active {
+  background-color: #773028;
+}
+
+.button__icon, .button__text {
+  display: inline-flex;
+  align-items: center;
+  padding: 0 12px;
+  color: white;
+  height: 100%;
+}
+
+.button__icon {
+  font-size: 1.5em;
+  background-color: rgba(0, 0, 0, 0.08);
+}
+
+input[type=number] {
+  background-color: #f1ccb5;
+  padding: 5px;
+  margin:1px 1px;
+  border: 1px solid #eee;
+  border-radius:8px;
+  box-shadow:0 0 15px 4px rgba(10,0,0, 0.06);
+}
+
+input[type=number]:hover {
+  border: 1px solid #aaa;
+}
+
+
+input[type=number]:focus {
+  background-color: #edddd3;
+  border-color: #000;
+}
+
+input[type=button] {
+  background-color: #da493a;
+  margin:2px 2px;
+  margin-left: 5px;
+  border: 1px solid #eee;
+  border-radius:5px;
+  box-shadow:0 0 15px 4px rgba(10,0,0, 0.06);
+  color: white;
+}
+
+input[type=button]:hover {
+  border: 1px solid #aaa;
+}
+
+input[type=button]:focus {
+  background-color: #ba3e31;
 }
