@@ -5,7 +5,8 @@ TODO:
 4. extend guess box to same length as end playing box                                   DONE
 5. snazz it up                                                                          INPROGRESS
 6. maybe add light mode/dark mode switch?                                               DONE
-7. add a readme explaining what we have changed                                         NOTSTARTED
+7. add a readme explaining what we have changed                                         INPROGRESS
 8. make "here's how you did" appear later (if user clicks no, show them the stats)      NOTSTARTED
 9. use .focus() to make it easier for the user                                          NOTSTARTED
-10. maybe add an icon of the moon/sun on dark mode toggle                               DONE        
+10. maybe add an icon of the moon/sun on dark mode toggle                               DONE   
+11. add page filler (graphics, more stats, etc)?                                        NOTSTARTED     
